@@ -10,7 +10,7 @@ background: #ffffff;
 color: #111;
 }
 
-/* Header */
+/* HEADER */
 header {
 display: flex;
 justify-content: space-between;
@@ -45,10 +45,10 @@ nav a:hover {
 color: #ffcc00;
 }
 
-/* Hero */
+/* HERO COM FUNDO */
 .hero {
-height: 60vh;
-background: url('https://images.unsplash.com/photo-1515923163809-1e43888da2b1') center/cover no-repeat;
+height: 70vh;
+background: url('/mnt/data/71E74370-89B4-4DB0-850D-CCC6A2314C8A.jpeg') center/cover no-repeat;
 position: relative;
 }
 
@@ -56,21 +56,26 @@ position: relative;
 content: '';
 position: absolute;
 inset: 0;
-background: rgba(0, 0, 0, 0.6);
+background: rgba(0, 0, 0, 0.5); /* 50% de opacidade */
 }
 
 .hero-text {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+position: relative;
+z-index: 1;
 color: #fff;
 text-align: center;
+top: 50%;
+transform: translateY(-50%);
 }
 
 .hero-text h1 {
 font-size: 48px;
 color: #ffcc00;
+}
+
+.hero-text p {
+margin: 10px 0;
+font-size: 20px;
 }
 
 .btn {
@@ -86,19 +91,7 @@ font-weight: bold;
 background: #ffe680;
 }
 
-/* Content sections */
-.section {
-padding: 50px 20px;
-max-width: 900px;
-margin: auto;
-}
-
-.section h2 {
-color: #000;
-margin-bottom: 20px;
-text-align: center;
-}
-
+/* RODAPÉ */
 footer {
 text-align: center;
 padding: 20px;
